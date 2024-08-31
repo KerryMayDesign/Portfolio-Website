@@ -1,5 +1,6 @@
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Josefin Sans"
@@ -21,7 +22,80 @@
           <li><a class="menu_section_link" href="#jump_to_home">HOME</a></li>
           <li><a class="menu_section_link" href="#jump_to_about">ABOUT</a></li>
           <li>
-            <a class="menu_section_link" href="#jump_to_portfolio">PORTFOLIO</a>
+            <div class="menu_section_portfolio">
+              <a class="menu_section_link" href="#jump_to_portfolio"
+                >PORTFOLIO</a
+              >
+              <div class="portfolio_dropdown">
+                <a class="portfolio_dropdown_link" href="titlesequences.html"
+                  >Title Sequences</a
+                >
+                <a class="portfolio_dropdown_link" href="sunsensesuncream.html"
+                  >Sunsense Suncream</a
+                >
+                <a class="portfolio_dropdown_link" href="titlesequences.html"
+                  >Le Monde</a
+                >
+                <a class="portfolio_dropdown_link" href="boardgame.html"
+                  >Board Game</a
+                >
+                <a class="portfolio_dropdown_link" href="sadnessevent.html"
+                  >Sadness Event</a
+                >
+                <a class="portfolio_dropdown_link" href="fictionalcreature.html"
+                  >Fictional Creature</a
+                >
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div
+          onclick="document.body.classList.toggle('overflow_menu_visible');"
+          class="menu_icon"
+        >
+          =
+        </div>
+      </section>
+      <section class="overflow_menu">
+        <header class="header_info">
+          <a
+            class="overflow_menu_button_home"
+            onclick="document.body.classList.toggle('overflow_menu_visible');"
+            href="#jump_to_home"
+            >Kerry May</a
+          >
+
+          <div
+            onclick="document.body.classList.toggle('overflow_menu_visible');"
+            class="close_icon"
+          >
+            x
+          </div>
+        </header>
+        <ul class="overflow_menu_list">
+          <li>
+            <a
+              onclick="document.body.classList.toggle('overflow_menu_visible');"
+              class="overflow_menu_link"
+              href="#jump_to_home"
+              ><h1>HOME</h1></a
+            >
+          </li>
+          <li>
+            <a
+              onclick="document.body.classList.toggle('overflow_menu_visible');"
+              class="overflow_menu_link"
+              href="#jump_to_about"
+              ><h1>ABOUT</h1>
+            </a>
+          </li>
+          <li>
+            <a
+              onclick="document.body.classList.toggle('overflow_menu_visible');"
+              class="overflow_menu_link"
+              href="#jump_to_portfolio"
+              ><h1>PORTFOLIO</h1>
+            </a>
           </li>
         </ul>
       </section>
