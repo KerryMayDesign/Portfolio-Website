@@ -1,3 +1,11 @@
+:root {
+  --font-size-22: min(3vw, 22px);
+  --font-size-28: min(4vw, 28px);
+  --font-size-32: min(5vw, 32px);
+  --font-size-52: min(8vw, 52px);
+  --font-size-82: min(10vw, 82px);
+}
+
 /* footer section */
 
 footer {

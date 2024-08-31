@@ -6,6 +6,11 @@
   --font-size-82: min(10vw, 82px);
 }
 
+video {
+  width: 100%;
+  height: 100%;
+}
+
 h1,
 h2,
 h3,
