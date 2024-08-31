@@ -1,3 +1,11 @@
+:root {
+  --font-size-22: min(3vw, 22px);
+  --font-size-28: min(4vw, 28px);
+  --font-size-32: min(5vw, 32px);
+  --font-size-52: min(8vw, 52px);
+  --font-size-82: min(10vw, 82px);
+}
+
 h1,
 h2,
 h3,
@@ -6,16 +14,16 @@ h4 {
 }
 
 h1 {
-  font-size: 82;
+  font-size: var(--font-size-82);
   color: 893D62;
 }
 
 h2 {
-  font-size: 52;
+  font-size: var(--font-size-52);
 }
 
 h3 {
-  font-size: 32;
+  font-size: var(--font-size-32);
   font-weight: lighter;
 }
 
@@ -24,11 +32,11 @@ h3 {
 }
 
 h4 {
-  font-size: 28;
+  font-size: var(--font-size-28);
 }
 
 p {
-  font-size: 22;
+  font-size: var(--font-size-22);
   font-weight: light;
   color: black;
 }
@@ -80,7 +88,7 @@ header {
   padding: 12px;
   cursor: pointer;
   color: white;
-  font-size: 32px;
+  font-size: var(--font-size-32);
   width: 32px;
   text-align: center;
 }
@@ -99,7 +107,7 @@ header {
 .button_home {
   font-family: inherit;
   background-color: 893D62;
-  font-size: min(8vw, 52px);
+  font-size: var(--font-size-52);
   font-weight: bolder;
   border: none;
   color: white;
@@ -112,7 +120,7 @@ header {
 .header_email {
   font-weight: lighter;
   text-decoration: none;
-  font-size: min(4vw, 28px);
+  font-size: var(--font-size-28);
 }
 
 @media only screen and (max-width: 1024px) {
@@ -128,7 +136,7 @@ header {
 
 ul {
   font-weight: 500;
-  font-size: 28;
+  font-size: var(--font-size-28);
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -229,7 +237,7 @@ body.overflow_menu_visible .overflow_menu {
 .overflow_menu_link h1 {
   text-decoration: underline;
   color: #2b706b;
-  font-size: min(10vw, 82px);
+  font-size: var(--font-size-82);
   padding: 2vh 0;
 }
 
@@ -242,7 +250,7 @@ body.overflow_menu_visible .overflow_menu {
 }
 
 .overflow_menu_button_home {
-  font-size: min(8vw, 52px);
+  font-size: var(--font-size-52);
   font-weight: bolder;
   border: none;
   color: white;
@@ -255,7 +263,7 @@ body.overflow_menu_visible .overflow_menu {
   padding: 12px;
   cursor: pointer;
   color: white;
-  font-size: 32px;
+  font-size: var(--font-size-32);
   width: 32px;
   text-align: center;
 }
@@ -416,7 +424,7 @@ body.overflow_menu_visible .overflow_menu {
 }
 
 .titlesequences_name {
-  font-size: 82;
+  font-size: var(--font-size-82);
   font-weight: bolder;
   color: #2b706b;
 }
@@ -435,7 +443,7 @@ body.overflow_menu_visible .overflow_menu {
 }
 
 .sunsensesuncream_name {
-  font-size: 82;
+  font-size: var(--font-size-82);
   font-weight: 700;
   color: #893d62;
 }
@@ -454,7 +462,7 @@ body.overflow_menu_visible .overflow_menu {
 }
 
 .lemonde_name {
-  font-size: 82;
+  font-size: var(--font-size-82);
   font-weight: 700;
   color: #2b706b;
 }
@@ -473,7 +481,7 @@ body.overflow_menu_visible .overflow_menu {
 }
 
 .boardgame_name {
-  font-size: 82;
+  font-size: var(--font-size-82);
   font-weight: 700;
   color: #893d62;
 }
@@ -492,7 +500,7 @@ body.overflow_menu_visible .overflow_menu {
 }
 
 .sadnessevent_name {
-  font-size: 82;
+  font-size: var(--font-size-82);
   font-weight: 700;
   color: #2b706b;
 }
@@ -511,7 +519,7 @@ body.overflow_menu_visible .overflow_menu {
 }
 
 .fictionalcreature_name {
-  font-size: 82;
+  font-size: var(--font-size-82);
   font-weight: 700;
   color: #893d62;
 }
@@ -567,7 +575,7 @@ footer {
 
 .contact_email {
   flex: 1;
-  font-size: 32;
+  font-size: var(--font-size-32);
 }
 
 .linkedin {
@@ -580,4 +588,19 @@ footer {
 
 .figma {
   height: 40px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .row1 {
+    justify-content: center;
+  }
+
+  .row2 {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .column1 {
+    align-self: center;
+  }
 }
