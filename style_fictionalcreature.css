@@ -211,7 +211,6 @@ li a:hover {
     "creature t-shirt t-shirt";
 }
 
-
 .photos div {
   overflow: hidden;
 }
@@ -252,7 +251,7 @@ li a:hover {
   grid-area: bread;
 }
 
-.legs  {
+.legs {
   grid-area: legs;
 }
 
@@ -260,11 +259,11 @@ li a:hover {
   transform: scale(1.9) translateY(-23%) translateX(-4%);
 }
 
-.mop  {
+.mop {
   grid-area: mop;
 }
 
-.creature  {
+.creature {
   grid-area: creature;
 }
 
@@ -273,7 +272,7 @@ li a:hover {
   transform: scale(1) translateY(0%) translateX(-2%);
 }
 
-.t-shirt  {
+.t-shirt {
   grid-area: t-shirt;
 }
 
@@ -404,67 +403,4 @@ li a:hover {
   border-top: 28px solid transparent;
   border-bottom: 29px solid transparent;
   border-left: 47px solid white;
-}
-
-/* footer */
-
-footer {
-  font-weight: 600;
-  color: white;
-  background-color: #893d62;
-  text-align: left;
-  margin-top: 0.5%;
-  padding: 4% 5% 4% 5%;
-}
-
-.contacts {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: column wrap;
-}
-
-.contact_me {
-  align-items: flex-end;
-}
-
-.row1 {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.row2 {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 10px;
-}
-
-.column1 {
-  display: flex;
-  align-self: flex-start;
-  padding-top: 5px;
-}
-
-.column2 {
-  display: flex;
-  flex-flow: row nowrap;
-  gap: 60px;
-}
-
-.contact_email {
-  flex: 1;
-  font-size: 32;
-}
-
-.linkedin {
-  height: 40px;
-}
-
-.github {
-  height: 40px;
-}
-
-.figma {
-  height: 40px;
 }

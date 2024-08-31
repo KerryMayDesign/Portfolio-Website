@@ -1,3 +1,11 @@
+:root {
+  --font-size-22: min(3vw, 22px);
+  --font-size-28: min(4vw, 28px);
+  --font-size-32: min(5vw, 32px);
+  --font-size-52: min(8vw, 52px);
+  --font-size-82: min(10vw, 82px);
+}
+
 h1,
 h2,
 h3,
@@ -6,18 +14,18 @@ h4 {
 }
 
 h1 {
-  font-size: 82;
+  font-size: var(--font-size-82);
   margin: 0;
   padding-bottom: 0.5%;
 }
 
 h2 {
-  font-size: 52;
+  font-size: var(--font-size-52);
   margin: 0;
 }
 
 h3 {
-  font-size: 32;
+  font-size: var(--font-size-32);
   font-weight: lighter;
   margin: 0;
 }
@@ -27,12 +35,12 @@ h3 {
 }
 
 h4 {
-  font-size: 28;
+  font-size: var(--font-size-28);
   margin: 0;
 }
 
 p {
-  font-size: 22;
+  font-size: var(--font-size-22);
   font-weight: light;
   color: black;
   margin: 0;
@@ -43,87 +51,10 @@ body {
   margin: 0;
 }
 
-/* header */
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  font-weight: 500;
-  color: white;
-  background-color: #893d62;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1;
-  padding: 2% 5% 2% 5%;
-  height: 70px;
-}
-
-.menu_sections {
-}
-
-.header_info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header_name {
-  margin-right: 23%;
-  white-space: nowrap;
-}
-
-.button_home {
-  font-family: inherit;
-  background-color: #893d62;
-  font-size: 52px;
-  font-weight: bolder;
-  border: none;
-  color: white;
-  padding: 0%;
-  text-align: center;
-  text-decoration: none;
-}
-
-.header_email {
-  font-weight: lighter;
-}
-
-.mail {
-  text-decoration: none;
-  color: white;
-}
-
-ul {
-  font-weight: 500;
-  font-size: 28;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  padding: 8px;
-  color: white;
-  text-decoration: none;
-}
-
-li a:hover {
-  font-weight: 500;
-  color: #accecb;
-}
-
 /* text */
 
 .names {
-  padding: 12% 5% 0% 5%;
+  padding: 140px 5% 0% 5%;
   /* pick a color */
   /* color: #893D62; */
   color: #2b706b;
@@ -135,12 +66,13 @@ li a:hover {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
+  row-gap: 82px;
 }
 
 .project_info {
   display: flex;
   flex-flow: column wrap;
-  width: 650px;
+  width: min(100%, 650px);
   align-items: flex-start;
   gap: 25px;
 }
@@ -150,7 +82,7 @@ li a:hover {
   flex-flow: row nowrap;
   justify-content: space-between;
   gap: 5%;
-  width: 650px;
+  width: min(100%, 650px);
 }
 
 .skills {
@@ -158,7 +90,7 @@ li a:hover {
   flex-flow: row nowrap;
   justify-content: space-between;
   gap: 5%;
-  width: 650px;
+  width: min(100%, 650px);
 }
 
 .blank_box {
@@ -166,7 +98,7 @@ li a:hover {
   flex-flow: row nowrap;
   justify-content: space-between;
   gap: 5%;
-  width: 650px;
+  width: min(100%, 650px);
 }
 
 .project_info_1 {
@@ -192,7 +124,7 @@ li a:hover {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 28px;
+  font-size: var(--font-size-28);
   cursor: pointer;
 }
 
@@ -269,6 +201,7 @@ li a:hover {
 
 @media only screen and (max-width: 1024px) {
   .photos {
+    height: 600%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(14, 1fr);
     grid-gap: 30px;
@@ -491,7 +424,7 @@ li a:hover {
 .arrow_left_name {
   display: block;
   color: #893d62;
-  font-size: 28;
+  font-size: var(--font-size-28);
   text-decoration: none;
   white-space: nowrap;
   display: flex;
@@ -504,7 +437,7 @@ li a:hover {
 .arrow_right_name {
   display: block;
   color: #893d62;
-  font-size: 28;
+  font-size: var(--font-size-28);
   text-decoration: none;
   white-space: nowrap;
   display: flex;
@@ -543,67 +476,4 @@ li a:hover {
   border-top: 28px solid transparent;
   border-bottom: 29px solid transparent;
   border-left: 47px solid white;
-}
-
-/* footer */
-
-footer {
-  font-weight: 600;
-  color: white;
-  background-color: #893d62;
-  text-align: left;
-  margin-top: 0.5%;
-  padding: 4% 5% 4% 5%;
-}
-
-.contacts {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: column wrap;
-}
-
-.contact_me {
-  align-items: flex-end;
-}
-
-.row1 {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.row2 {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 10px;
-}
-
-.column1 {
-  display: flex;
-  align-self: flex-start;
-  padding-top: 5px;
-}
-
-.column2 {
-  display: flex;
-  flex-flow: row nowrap;
-  gap: 60px;
-}
-
-.contact_email {
-  flex: 1;
-  font-size: 32;
-}
-
-.linkedin {
-  height: 40px;
-}
-
-.github {
-  height: 40px;
-}
-
-.figma {
-  height: 40px;
 }
