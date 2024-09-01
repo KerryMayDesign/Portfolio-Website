@@ -3,7 +3,7 @@
   --font-size-28: min(4vw, 28px);
   --font-size-32: min(5vw, 32px);
   --font-size-52: min(8vw, 52px);
-  --font-size-82: min(10vw, 82px);
+  --font-size-82: min(9vw, 82px);
 }
 
 /* footer section */
@@ -40,7 +40,7 @@ footer {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 .column1 {
@@ -74,15 +74,12 @@ footer {
 
 @media only screen and (max-width: 1024px) {
   .row1 {
-    justify-content: center;
+    justify-content: start;
   }
 
   .row2 {
+    align-items: start;
     flex-direction: column;
-    row-gap: 10px;
-  }
-
-  .column1 {
-    align-self: center;
+    row-gap: 35px;
   }
 }

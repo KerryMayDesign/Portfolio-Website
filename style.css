@@ -3,7 +3,7 @@
   --font-size-28: min(4vw, 28px);
   --font-size-32: min(5vw, 32px);
   --font-size-52: min(8vw, 52px);
-  --font-size-82: min(10vw, 82px);
+  --font-size-82: min(9vw, 82px);
 }
 
 video {
@@ -21,10 +21,6 @@ h4 {
 h1 {
   font-size: var(--font-size-82);
   color: 893D62;
-}
-
-h2 {
-  font-size: var(--font-size-52);
 }
 
 h3 {
@@ -63,17 +59,6 @@ body {
   padding-top: 119px;
 }
 
-@media only screen and (max-width: 1024px) {
-  .intro {
-    flex-direction: column;
-    padding-top: 70px;
-  }
-
-  .into_text {
-    padding-left: 6.5%;
-  }
-}
-
 .hi {
   margin-top: 15%;
   color: 2B706B;
@@ -85,7 +70,7 @@ body {
 }
 
 .hi_email {
-  padding: 12% 0% 5% 0%;
+  padding: 12% 0% 10% 0%;
 }
 
 .intro_section {
@@ -107,6 +92,17 @@ body {
   transform: scale(140%);
 }
 
+@media only screen and (max-width: 1024px) {
+  .intro {
+    flex-direction: column;
+    padding-top: 70px;
+  }
+
+  .into_text {
+    padding-left: 6.5%;
+  }
+}
+
 /* about me section */
 
 .about {
@@ -115,7 +111,7 @@ body {
   margin-top: 0.5%;
   padding-right: 6%;
   padding-left: 6%;
-  padding-top: 140px;
+  padding-top: 110px;
 }
 
 .about2 {
@@ -127,6 +123,7 @@ body {
 @media only screen and (max-width: 1024px) {
   .about2 {
     flex-direction: column;
+    row-gap: 50px;
   }
 }
 
@@ -165,13 +162,25 @@ body {
   flex: 1;
 }
 
+@media only screen and (max-width: 1024px) {
+  .workexperience_title,
+  .education_title {
+    text-align: left;
+  }
+
+  .workexperience_image,
+  .education_image {
+    height: 150px;
+  }
+}
+
 /* portfolio projects section */
 
 .portfolio {
   text-align: center;
   margin-top: 0.5%;
 
-  padding-top: 140px;
+  padding-top: 110px;
 }
 
 .portfolio_section_link {
@@ -208,6 +217,13 @@ body {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1024px) {
+  .titlesequences_div {
+    background-image: url(Website_Images/Category_images/titlesequences.png);
+    cursor: pointer;
+  }
+}
+
 .titlesequences_name {
   font-size: var(--font-size-82);
   font-weight: bolder;
@@ -225,6 +241,13 @@ body {
 .sunsensesuncream_div:hover {
   background-image: url(Website_Images/Category_images/sunsensesuncream.png);
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .sunsensesuncream_div {
+    background-image: url(Website_Images/Category_images/sunsensesuncream.png);
+    cursor: pointer;
+  }
 }
 
 .sunsensesuncream_name {
@@ -246,6 +269,13 @@ body {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1024px) {
+  .lemonde_div {
+    background-image: url(Website_Images/Category_images/lemonde.png);
+    cursor: pointer;
+  }
+}
+
 .lemonde_name {
   font-size: var(--font-size-82);
   font-weight: 700;
@@ -263,6 +293,13 @@ body {
 .boardgame_div:hover {
   background-image: url(Website_Images/Category_images/boardgame.png);
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .boardgame_div {
+    background-image: url(Website_Images/Category_images/boardgame.png);
+    cursor: pointer;
+  }
 }
 
 .boardgame_name {
@@ -284,6 +321,13 @@ body {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1024px) {
+  .sadnessevent_div {
+    background-image: url(Website_Images/Category_images/sadnessevent.png);
+    cursor: pointer;
+  }
+}
+
 .sadnessevent_name {
   font-size: var(--font-size-82);
   font-weight: 700;
@@ -303,8 +347,26 @@ body {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1024px) {
+  .fictionalcreature_div {
+    background-image: url(Website_Images/Category_images/fictionalcreature.png);
+    cursor: pointer;
+  }
+}
+
 .fictionalcreature_name {
   font-size: var(--font-size-82);
   font-weight: 700;
   color: #893d62;
+}
+
+@media only screen and (max-width: 1024px) {
+  .portfolio_info {
+    text-align: left;
+  }
+
+  .portfolio_info1,
+  .portfolio_info2 {
+    display: inline;
+  }
 }

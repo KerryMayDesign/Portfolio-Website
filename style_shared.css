@@ -1,0 +1,25 @@
+h2 {
+  font-size: var(--font-size-32);
+}
+
+.arrow_name_short {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .arrow_name_full {
+    display: none;
+  }
+  .arrow_name_short {
+    display: block;
+  }
+}
+
+.names {
+  padding-top: 110px;
+  padding-bottom: 30px;
+}
+
+.project_info {
+  padding-bottom: 25px;
+}

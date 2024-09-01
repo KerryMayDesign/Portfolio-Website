@@ -3,7 +3,7 @@
   --font-size-28: min(4vw, 28px);
   --font-size-32: min(5vw, 32px);
   --font-size-52: min(8vw, 52px);
-  --font-size-82: min(10vw, 82px);
+  --font-size-82: min(9vw, 82px);
 }
 
 video {
@@ -76,9 +76,10 @@ body {
 .project_info {
   display: flex;
   flex-flow: column wrap;
-  width: 650px;
+  width: min(100%, 650px);
   align-items: flex-start;
   gap: 25px;
+  padding-bottom: 5%;
 }
 
 .delivered {
@@ -86,7 +87,7 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
   gap: 5%;
-  width: 650px;
+  width: min(100%, 650px);
 }
 
 .skills {
@@ -94,7 +95,7 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
   gap: 5%;
-  width: 650px;
+  width: min(100%, 650px);
 }
 
 .project_info_1 {
@@ -105,7 +106,7 @@ body {
 }
 
 .name_info {
-  width: 650px;
+  width: min(100%, 650px);
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
