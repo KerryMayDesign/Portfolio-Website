@@ -54,6 +54,7 @@ p {
 body {
   font-family: "Josefin Sans";
   margin: 0;
+  padding: 2% 0% 0% 0%;
 }
 
 /* header */
@@ -211,13 +212,18 @@ li a:hover {
   padding: 1% 5% 6% 5%;
   display: grid;
   max-width: 100%;
-  height: 230%;
+  height: 250%;
   overflow: hidden;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(12, 1fr);
-  grid-gap: 30px;
+  grid-template-rows: repeat(17, 1fr);
+  grid-gap: 40px;
 
   grid-template-areas:
+    "research research research"
+    "research research research"
+    "research research research"
+    "research research research"
+    "research research research"
     "tunnel mode1 mode1"
     "tunnel mode1 mode1"
     "shadow mode1 mode1"
@@ -236,9 +242,10 @@ li a:hover {
   .photos {
     height: 600%;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(9, 1fr);
     grid-gap: 30px;
     grid-template-areas:
+      "research"
       "tunnel"
       "mode1"
       "shadow"
@@ -260,6 +267,14 @@ li a:hover {
   height: 100%;
 }
 
+.research {
+  grid-area: research;
+}
+
+.research img {
+  object-fit: contain;
+}
+
 .tunnel {
   grid-area: tunnel;
 }
@@ -270,7 +285,6 @@ li a:hover {
 
 .shadow img {
   object-fit: contain;
-  transform: scale(1.2) translateY(-4%) translateX(6%);
 }
 
 .missing {
@@ -279,7 +293,7 @@ li a:hover {
 
 .missing img {
   object-fit: contain;
-  transform: scale(1.4) translateY(-12%) translateX(-2%);
+  transform: scale(1.4) translateY(-12%) translateX(0%);
 }
 
 .closed {
@@ -287,7 +301,8 @@ li a:hover {
 }
 
 .closed img {
-  transform: scale(1.15) translateY(3%) translateX(0%);
+  object-fit: contain;
+  transform: scale(1.5) translateY(3%) translateX(0%);
 }
 
 .opened {
@@ -295,7 +310,8 @@ li a:hover {
 }
 
 .opened img {
-  transform: scale(1) translateY(2%) translateX(0%);
+  object-fit: contain;
+  transform: scale(1.2) translateY(2%) translateX(0%);
 }
 
 .mode1 {
@@ -304,7 +320,7 @@ li a:hover {
 
 .mode1 img {
   object-fit: contain;
-  transform: scale(1.2) translateY(0%) translateX(0%);
+  transform: scale(1.3) translateY(0%) translateX(0%);
 }
 
 .mode2 {
@@ -313,7 +329,7 @@ li a:hover {
 
 .mode2 img {
   object-fit: contain;
-  transform: scale(1.2) translateY(5.5%) translateX(0%);
+  transform: scale(1.3) translateY(5.5%) translateX(0%);
 }
 
 .mode3 {
@@ -322,7 +338,7 @@ li a:hover {
 
 .mode3 img {
   object-fit: contain;
-  transform: scale(1.2) translateY(5.5%) translateX(0%);
+  transform: scale(1.3) translateY(5.5%) translateX(0%);
 }
 
 /* navigation arrows */

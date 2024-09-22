@@ -54,6 +54,7 @@ p {
 body {
   font-family: "Josefin Sans";
   margin: 0;
+  padding: 2% 0% 0% 0%;
 }
 
 /* header */
@@ -211,13 +212,18 @@ li a:hover {
   padding: 1% 5% 6% 5%;
   display: grid;
   max-width: 100%;
-  height: 2000px;
+  height: 330%;
   overflow: hidden;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(12, 1fr);
-  grid-gap: 30px;
+  grid-template-rows: repeat(17, 1fr);
+  grid-gap: 40px;
 
   grid-template-areas:
+    "research research research"
+    "research research research"
+    "research research research"
+    "research research research"
+    "research research research"
     "internal_MG internal_MG sculpture_display"
     "internal_MG internal_MG sculpture_display"
     "internal_MG internal_MG external_MG"
@@ -236,9 +242,10 @@ li a:hover {
   .photos {
     height: 600%;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     grid-gap: 30px;
     grid-template-areas:
+      "research"
       "internal_MG"
       "sculpture_display"
       "external_MG"
@@ -261,6 +268,15 @@ li a:hover {
   height: 100%;
 }
 
+.research {
+  grid-area: research;
+}
+
+.research img {
+  object-fit: contain;
+  transform: scale(1.2) translateY(0%) translateX(0%);
+}
+
 .internal_MG {
   grid-area: internal_MG;
 }
@@ -278,7 +294,7 @@ li a:hover {
 }
 
 .front_cover img {
-  transform: scale(1.2) translateY(-4%) translateX(-0.5%);
+  transform: scale(1.3) translateY(-4%) translateX(-0.5%);
 }
 
 .signage {

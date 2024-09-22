@@ -54,6 +54,7 @@ p {
 body {
   font-family: "Josefin Sans";
   margin: 0;
+  padding: 2% 0% 0% 0%;
 }
 
 /* text */
@@ -135,13 +136,21 @@ body {
   padding: 1% 5% 6% 5%;
   display: grid;
   max-width: 100%;
-  height: 200%;
+  height: 270%;
   overflow: hidden;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(12, 1fr);
-  grid-gap: 30px;
+  grid-template-rows: repeat(20, 1fr);
+  grid-gap: 40px;
 
   grid-template-areas:
+    "analysis concepts concepts"
+    "analysis concepts concepts"
+    "analysis concepts concepts"
+    ". concepts concepts"
+    "research research research"
+    "research research research"
+    "research research research"
+    "research research research"
     "prototypes bcontents bcontents"
     "prototypes bcontents bcontents"
     "prototypes bcontents bcontents"
@@ -160,9 +169,12 @@ body {
   .photos {
     height: 600%;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     grid-gap: 30px;
     grid-template-areas:
+      "analysis"
+      "concepts"
+      "research"
       "prototypes"
       "bcontents"
       "bag"
@@ -181,6 +193,30 @@ body {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.analysis {
+  grid-area: analysis;
+}
+
+.analysis img {
+  object-fit: fill;
+}
+
+.concepts {
+  grid-area: concepts;
+}
+
+.concepts img {
+  object-fit: fill;
+}
+
+.research {
+  grid-area: research;
+}
+
+.research img {
+  object-fit: fill;
 }
 
 .prototypes {

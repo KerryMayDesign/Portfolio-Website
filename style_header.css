@@ -18,8 +18,8 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  padding: 2% 5% 2% 5%;
-  height: 70px;
+  padding: 2.5% 5% 2% 5%;
+  height: 72px;
   width: 100vw;
   box-sizing: border-box;
 }
@@ -30,7 +30,7 @@ header {
   display: none;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1150px) {
   .menu_sections ul {
     display: none;
   }

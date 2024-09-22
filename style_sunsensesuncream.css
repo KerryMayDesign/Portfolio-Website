@@ -54,6 +54,7 @@ p {
 body {
   font-family: "Josefin Sans";
   margin: 0;
+  padding: 2% 0% 0% 0%;
 }
 
 /* header */
@@ -197,11 +198,12 @@ li a:hover {
 }
 
 .button_microsite {
+  width: 100%;
   font-family: inherit;
   background-color: #2b706b;
   border: none;
   color: white;
-  padding: 10px 100px;
+  padding: 5%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -243,42 +245,52 @@ li a:hover {
   padding: 1% 5% 6% 5%;
   display: grid;
   max-width: 100%;
-  height: 270%;
+  height: 450%;
   overflow: hidden;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(20, 1fr);
-  grid-gap: 30px;
+  grid-template-rows: repeat(28, 1fr);
+  grid-gap: 40px;
 
   grid-template-areas:
+    "desk1 desk1 ."
+    "desk1 desk1 inspiration"
+    "desk1 desk1 inspiration"
+    "desk1 desk1 inspiration"
+    "desk1 desk1 ."
+    "desk2 desk2 desk2"
+    "desk2 desk2 desk2"
+    "desk2 desk2 desk2"
+    "desk2 desk2 desk2"
+    "desk2 desk2 desk2"
+    "desk2 desk2 desk2"
+    "desk2 desk2 desk2"
+    "paper print_shield laptop"
+    "paper print_shield laptop"
+    "paper print_shield microsite"
+    "paper print_sprinkles microsite"
+    "paper print_sprinkles microsite"
+    "Bread1 print_sprinkles microsite"
+    "Bread1 print_sunset microsite"
+    "Bread1 print_sunset microsite"
+    "Bread1W print_sunset microsite"
+    "Bread1W . microsite"
+    "Bread1W . ."
     "sunsense_MG sunsense_MG sunsense_MG"
     "sunsense_MG sunsense_MG sunsense_MG"
     "sunsense_MG sunsense_MG sunsense_MG"
     "sunsense_MG sunsense_MG sunsense_MG"
-    "sunsense_MG sunsense_MG sunsense_MG"
-    "Bread1 Bread1W paper"
-    "Bread1 Bread1W paper"
-    "Bread1 Bread1W paper"
-    "Bread1 Bread1W paper"
-    "microsite inspiration paper"
-    "microsite inspiration paper"
-    "microsite inspiration print_sprinkles"
-    "microsite inspiration print_sprinkles"
-    "microsite print_sunset print_sprinkles"
-    "microsite print_sunset print_sprinkles"
-    "microsite print_sunset print_shield"
-    "microsite print_sunset print_shield"
-    "microsite laptop print_shield"
-    "microsite laptop print_shield"
-    "microsite laptop .";
+    "sunsense_MG sunsense_MG sunsense_MG";
 }
 
 @media only screen and (max-width: 1024px) {
   .photos {
     height: 600%;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     grid-gap: 30px;
     grid-template-areas:
+      "desk1"
+      "desk2"
       "sunsense_MG"
       "Bread1"
       "Bread1W"
@@ -300,6 +312,14 @@ li a:hover {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.desk1 {
+  grid-area: desk1;
+}
+
+.desk2 {
+  grid-area: desk2;
 }
 
 .sunsense_MG {
@@ -339,6 +359,10 @@ li a:hover {
   grid-area: inspiration;
 }
 
+.inspiration img {
+  transform: scale(0.95) translateY(0%) translateX(0%);
+}
+
 .microsite {
   grid-area: microsite;
 }
@@ -359,6 +383,7 @@ li a:hover {
 }
 
 .print_sunset img {
+  transform: scale(1.1) translateY(4%);
 }
 
 .print_shield {
@@ -366,7 +391,7 @@ li a:hover {
 }
 
 .print_shield img {
-  transform: scale(1) translateY(5%);
+  transform: scale(1.1) translateY(2%);
 }
 
 .laptop {
@@ -495,4 +520,19 @@ li a:hover {
   border-top: 28px solid transparent;
   border-bottom: 29px solid transparent;
   border-left: 47px solid white;
+}
+
+/* footer links */
+
+.figma img {
+  width: 100%;
+  height: auto;
+}
+
+.github img {
+  object-fit: fill;
+}
+
+.linkedin img {
+  object-fit: fill;
 }

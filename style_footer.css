@@ -4,6 +4,7 @@
   --font-size-32: min(5vw, 32px);
   --font-size-52: min(8vw, 52px);
   --font-size-82: min(9vw, 82px);
+  --icon-size-40: min(6vw, 40px);
 }
 
 /* footer section */
@@ -61,15 +62,15 @@ footer {
 }
 
 .linkedin {
-  height: 40px;
+  height: var(--icon-size-40);
 }
 
 .github {
-  height: 40px;
+  height: var(--icon-size-40);
 }
 
 .figma {
-  height: 40px;
+  height: var(--icon-size-40);
 }
 
 @media only screen and (max-width: 1024px) {
