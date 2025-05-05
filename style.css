@@ -203,6 +203,32 @@ body {
   overflow-x: hidden;
 }
 
+.saru_div {
+  background-color: #d6b0c1;
+  padding: 9%;
+  background-size: auto 77%;
+  background-repeat: no-repeat;
+  background-position: left 0% bottom 0px;
+}
+
+.saru_div:hover {
+  background-image: url(Website_Images/Category_images/saru.png);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .saru_div {
+    background-image: url(Website_Images/Category_images/saru.png);
+    cursor: pointer;
+  }
+}
+
+.saru_name {
+  font-size: var(--font-size-82);
+  font-weight: 700;
+  color: #893d62;
+}
+
 .titlesequences_div {
   background-color: #accecb;
   padding: 9%;
