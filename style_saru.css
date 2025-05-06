@@ -263,7 +263,7 @@ li a:hover {
 
 @media only screen and (max-width: 1024px) {
   .photos {
-    height: 600%;
+    height: 1500%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(26, 1fr);
     grid-gap: 30px;
@@ -278,6 +278,7 @@ li a:hover {
       "miro_references"
       "posters_text"
       "main_poster"
+      "main_poster"
       "three_posters"
       "blackberry_poster"
       "nest_poster"
@@ -285,11 +286,15 @@ li a:hover {
       "title_sequence"
       "artifact_text"
       "miro_artifact"
+      "miro_artifact"
+      "."
       "gift_text"
       "bag_contents"
       "bag"
+      "bag"
       "card_posy"
       "threeD_poster"
+      "."
       "social_media_posts_text"
       "seedhead"
       "blood"
@@ -446,16 +451,32 @@ li a:hover {
   grid-area: bag_contents;
 }
 
+.bag_contents img {
+  object-fit: contain;
+}
+
 .bag {
   grid-area: bag;
+}
+
+.bag img {
+  object-fit: contain;
 }
 
 .card_posy {
   grid-area: card_posy;
 }
 
+.card_posy img {
+  object-fit: contain;
+}
+
 .threeD_poster {
   grid-area: threeD_poster;
+}
+
+.threeD_poster img {
+  object-fit: contain;
 }
 
 .social_media_posts_text {
