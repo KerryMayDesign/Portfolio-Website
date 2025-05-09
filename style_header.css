@@ -1,8 +1,9 @@
 :root {
   --font-size-22: min(3vw, 22px);
-  --font-size-28: min(4vw, 28px);
+  --font-size-24: min(4vw, 24px);
   --font-size-32: min(5vw, 32px);
-  --font-size-52: min(8vw, 52px);
+  --font-size-45: min(8vw, 45px);
+  --font-size-50: min(8vw, 50px);
   --font-size-82: min(9vw, 82px);
 }
 
@@ -18,7 +19,7 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  padding: 2.5% 5% 2% 5%;
+  padding: 2% 5% 2% 5%;
   height: 72px;
   width: 100vw;
   box-sizing: border-box;
@@ -62,7 +63,7 @@ header {
 .button_home {
   font-family: inherit;
   background-color: 893D62;
-  font-size: var(--font-size-52);
+  font-size: var(--font-size-50);
   font-weight: bolder;
   border: none;
   color: white;
@@ -75,7 +76,7 @@ header {
 .header_email {
   font-weight: lighter;
   text-decoration: none;
-  font-size: var(--font-size-28);
+  font-size: var(--font-size-24);
 }
 
 @media only screen and (max-width: 1024px) {

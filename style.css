@@ -1,9 +1,10 @@
 :root {
-  --font-size-22: min(3vw, 22px);
+  --font-size-18: min(3vw, 18px);
+  --font-size-20: min(4vw, 20px);
   --font-size-28: min(4vw, 28px);
-  --font-size-32: min(5vw, 32px);
-  --font-size-52: min(8vw, 52px);
-  --font-size-82: min(9vw, 82px);
+  --font-size-30: min(5vw, 30px);
+  --font-size-50: min(8vw, 50px);
+  --font-size-72: min(9vw, 72px);
 }
 
 video {
@@ -19,12 +20,16 @@ h4 {
 }
 
 h1 {
-  font-size: var(--font-size-82);
+  font-size: var(--font-size-72);
   color: 893D62;
 }
 
+h2 {
+  font-size: var(--font-size-30);
+}
+
 h3 {
-  font-size: var(--font-size-32);
+  font-size: var(--font-size-28);
   font-weight: lighter;
 }
 
@@ -33,17 +38,18 @@ h3 {
 }
 
 h4 {
-  font-size: var(--font-size-28);
+  font-size: var(--font-size-18);
 }
 
 p {
-  font-size: var(--font-size-22);
-  font-weight: light;
+  font-size: var(--font-size-20);
+  font-weight: lighter;
   color: black;
 }
 
 body {
-  font-family: "Josefin Sans";
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   width: 100vw;
   overflow-x: hidden;
   margin: 0;
@@ -227,6 +233,31 @@ body {
   font-size: var(--font-size-82);
   font-weight: 700;
   color: #893d62;
+}
+.fis_div {
+  background-color: #accecb;
+  padding: 9%;
+  background-size: auto 85%;
+  background-repeat: no-repeat;
+  background-position: right 10% bottom 0px;
+}
+
+.fis_div:hover {
+  background-image: url(Website_Images/Category_images/fis.png);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .fis_div {
+    background-image: url(Website_Images/Category_images/fis.png);
+    cursor: pointer;
+  }
+}
+
+.fis_name {
+  font-size: var(--font-size-82);
+  font-weight: bolder;
+  color: #2b706b;
 }
 
 .titlesequences_div {

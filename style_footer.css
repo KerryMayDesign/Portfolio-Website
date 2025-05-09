@@ -1,10 +1,10 @@
 :root {
   --font-size-22: min(3vw, 22px);
   --font-size-28: min(4vw, 28px);
-  --font-size-32: min(5vw, 32px);
+  --font-size-30: min(5vw, 30px);
   --font-size-52: min(8vw, 52px);
   --font-size-82: min(9vw, 82px);
-  --icon-size-40: min(6vw, 40px);
+  --icon-size-30: min(6vw, 30px);
 }
 
 /* footer section */
@@ -58,19 +58,19 @@ footer {
 
 .contact_email {
   flex: 1;
-  font-size: var(--font-size-32);
+  font-size: var(--font-size-28);
 }
 
 .linkedin {
-  height: var(--icon-size-40);
+  height: var(--icon-size-30);
 }
 
 .github {
-  height: var(--icon-size-40);
+  height: var(--icon-size-30);
 }
 
 .figma {
-  height: var(--icon-size-40);
+  height: var(--icon-size-30);
 }
 
 @media only screen and (max-width: 1024px) {
