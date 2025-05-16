@@ -209,12 +209,38 @@ body {
   overflow-x: hidden;
 }
 
-.saru_div {
+.magpie_materials_div {
   background-color: #d6b0c1;
   padding: 9%;
   background-size: auto 77%;
   background-repeat: no-repeat;
   background-position: left 0% bottom 0px;
+}
+
+.magpie_materials_div:hover {
+  background-image: url(Website_Images/Category_images/magpie.png);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .magpie_materials_div {
+    background-image: url(Website_Images/Category_images/magpie.png);
+    cursor: pointer;
+  }
+}
+
+.magpie_materials_name {
+  font-size: var(--font-size-82);
+  font-weight: 700;
+  color: #893d62;
+}
+
+.saru_div {
+  background-color: #accecb;
+  padding: 9%;
+  background-size: auto 85%;
+  background-repeat: no-repeat;
+  background-position: right 10% bottom 0px;
 }
 
 .saru_div:hover {
@@ -231,15 +257,16 @@ body {
 
 .saru_name {
   font-size: var(--font-size-82);
-  font-weight: 700;
-  color: #893d62;
+  font-weight: bolder;
+  color: #2b706b;
 }
+
 .fis_div {
-  background-color: #accecb;
+  background-color: #d6b0c1;
   padding: 9%;
-  background-size: auto 85%;
+  background-size: auto 98%;
   background-repeat: no-repeat;
-  background-position: right 10% bottom 0px;
+  background-position: left 0% bottom 0px;
 }
 
 .fis_div:hover {
@@ -248,7 +275,7 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
-  .fis_div {
+  .saru_div {
     background-image: url(Website_Images/Category_images/fis.png);
     cursor: pointer;
   }
@@ -256,8 +283,8 @@ body {
 
 .fis_name {
   font-size: var(--font-size-82);
-  font-weight: bolder;
-  color: #2b706b;
+  font-weight: 700;
+  color: #893d62;
 }
 
 .titlesequences_div {
