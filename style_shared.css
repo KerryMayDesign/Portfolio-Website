@@ -6,6 +6,11 @@ h2 {
   display: none;
 }
 
+.arrow_name_full {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 @media only screen and (max-width: 1024px) {
   .arrow_name_full {
     display: none;

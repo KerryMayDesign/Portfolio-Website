@@ -217,7 +217,21 @@ li a:hover {
   height: 830%;
   overflow: hidden;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(29, 1fr);
+  grid-template-rows:
+    repeat(2, min-content)
+    repeat(3, 1fr)
+    min-content
+    repeat(2, 1fr)
+    min-content
+    repeat(3, 1fr)
+    min-content
+    repeat(6, 1fr)
+    min-content
+    repeat(3, 1fr)
+    min-content
+    repeat(3, 1fr)
+    min-content
+    repeat(4, 1fr);
   grid-gap: 40px;
 
   grid-template-areas:
