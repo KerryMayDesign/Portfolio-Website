@@ -12,6 +12,8 @@ h2 {
   }
   .arrow_name_short {
     display: block;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 
